@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import { setStorageItem, getStorageItem } from "../utils";
 
 const apiUrl = "https://newsapi.org/v2";
-const apiKey = "89ce24b7eaee47239dd1ebdcd2f639aa";
+const apiKey = "ca2dc88c23124076bd98107bf9d78159";
 const pageSize = "5";
 
 const requestConfig = {
