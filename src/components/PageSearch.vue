@@ -24,6 +24,8 @@ export default {
     };
   },
   methods: {
+    ...mapMutations(["setSearchParam"]),
+
     ...mapActions(["searchNews"]),
 
     search() {
@@ -31,7 +33,11 @@ export default {
         return;
       }
 
-      this.searchNews(this.searchParam);
+      // add search parameter to the store
+      this.setSearchParam(this.searchParam);
+
+      // dispatch search action
+      this.searchNews();
     },
   },
 };

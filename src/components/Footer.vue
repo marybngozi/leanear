@@ -1,5 +1,7 @@
 <template>
-  <footer class="flex items-center justify-center bg-blumine h-20 text-white">
+  <footer
+    class="mt-3 flex items-center justify-center bg-blumine h-20 text-white"
+  >
     <p>&copy; Leanear {{ year }}</p>
   </footer>
 </template>

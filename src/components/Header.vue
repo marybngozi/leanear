@@ -26,70 +26,21 @@
         class="w-64 pb-0 absolute inset-y-0 right-0 text-md md:text-sm md:flex-grow md:flex md:justify-start md:bg-bluewood md:text-squeeze md:relative md:px-0"
         :class="showMenu ? 'block' : 'hidden'"
       >
-        <button
-          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white block md:bg-bluewood md:inline-block md:w-1/2 hover:bg-blumine hover:text-white"
+        <a
+          href="/"
+          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white block md:bg-bluewood md:inline-block md:w-3/12 hover:bg-blumine hover:text-white"
           :class="activeHeader === 'home' ? 'active' : 'notActive'"
         >
-          <a href="/">
-            <span>Home</span>
-          </a>
-        </button>
+          <span>Home</span>
+        </a>
 
-        <button
-          @click="setSearch('business')"
-          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white md:pl-0 block md:bg-bluewood md:inline-block md:w-1/2 hover:bg-blumine hover:text-white"
-          :class="activeHeader === 'business' ? 'active' : 'notActive'"
+        <a
+          href="/my-library"
+          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white block md:bg-bluewood md:inline-block md:w-3/12 hover:bg-blumine hover:text-white"
+          :class="activeHeader === 'my-news' ? 'active' : 'notActive'"
         >
-          <span>Business</span>
-        </button>
-
-        <button
-          @click="setSearch('entertainment')"
-          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white md:pl-0 block md:bg-bluewood md:inline-block md:w-1/2 hover:bg-blumine hover:text-white"
-          :class="activeHeader === 'entertainment' ? 'active' : 'notActive'"
-        >
-          <span>Entertainment</span>
-        </button>
-
-        <button
-          @click="setSearch('general')"
-          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white md:pl-0 block md:bg-bluewood md:inline-block md:w-1/2 hover:bg-blumine hover:text-white"
-          :class="activeHeader === 'general' ? 'active' : 'notActive'"
-        >
-          <span>General</span>
-        </button>
-
-        <button
-          @click="setSearch('health')"
-          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white md:pl-0 block md:bg-bluewood md:inline-block md:w-1/2 hover:bg-blumine hover:text-white"
-          :class="activeHeader === 'health' ? 'active' : 'notActive'"
-        >
-          <span>Health</span>
-        </button>
-
-        <button
-          @click="setSearch('science')"
-          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white md:pl-0 block md:bg-bluewood md:inline-block md:w-1/2 hover:bg-blumine hover:text-white"
-          :class="activeHeader === 'science' ? 'active' : 'notActive'"
-        >
-          <span>Science</span>
-        </button>
-
-        <button
-          @click="setSearch('sports')"
-          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white md:pl-0 block md:bg-bluewood md:inline-block md:w-1/2 hover:bg-blumine hover:text-white"
-          :class="activeHeader === 'sports' ? 'active' : 'notActive'"
-        >
-          <span>Sports</span>
-        </button>
-
-        <button
-          @click="setSearch('technology')"
-          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white md:pl-0 block md:bg-bluewood md:inline-block md:w-1/2 hover:bg-blumine hover:text-white"
-          :class="activeHeader === 'technology' ? 'active' : 'notActive'"
-        >
-          <span>Technology</span>
-        </button>
+          <span>My Library</span>
+        </a>
 
         <PageSearch class="bg-white py-2 block md:hidden" />
       </div>
@@ -117,7 +68,6 @@ export default {
     toggleMenu: function() {
       this.showMenu = !this.showMenu;
     },
-    setSearch(cat) {},
   },
 };
 </script>
