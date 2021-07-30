@@ -1,0 +1,26 @@
+Using Vue, TailwindCSS and newsapi.org
+
+build a news app that does the following
+
+1. On the landing page, the user should see top headlines of news based on their location (this location should also be displayed)
+
+*Info should contain
+-News Headline
+-Snippet of the news
+-Source
+
+2. User should be able to view top headlines of categories like: business, entertainment, general, health, science, sports, technology
+
+3. Users should be able to search news in any other category they want,
+
+4. User should be able to view news by news several news source
+
+5. Users should be able to add particular news to a read later list that should be persisted on their browser localstorage
+
+6. Each page result should only show 5 news items at a time
+
+Host the code on GitHub
+
+And host with netlify
+
+api-key => 89ce24b7eaee47239dd1ebdcd2f639aa
