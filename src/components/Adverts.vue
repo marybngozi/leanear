@@ -1,9 +1,20 @@
 <template>
-  <section>
+  <section class="px-3">
     <h2 class="text-center text-xl">News Sources</h2>
-    <div class="text-left" v-for="(news, i) in allNews" :key="i">
-      <h4>Jomia Prime</h4>
-      <p>{{ news.author }}</p>
+    <div class="text-center mt-10" v-show="!allSources.length">
+      <i class="fa fa-spinner fa-3x animate-spin"></i>
+    </div>
+
+    <div v-show="allSources.length">
+      <div
+        class="text-left p-2 border-b-2"
+        v-for="(source, i) in allSources"
+        :key="i"
+      >
+        <button @click="getNewsFrom(source.id)">
+          <span>{{ source.name }}</span>
+        </button>
+      </div>
     </div>
   </section>
 </template>
@@ -17,7 +28,10 @@ export default {
     NewsInfo,
   },
   computed: {
-    ...mapGetters(["allNews"]),
+    ...mapGetters(["allSources"]),
+  },
+  methods: {
+    ...mapActions(["getNewsFrom"]),
   },
 };
 </script>

@@ -1,12 +1,12 @@
 <template>
   <div>
     <Header class="sticky top-0" />
-    <section class="flex flex-wrap">
+    <section class="md:flex md:flex-wrap">
       <main class="w-12/12 md:w-8/12">
         <News />
       </main>
 
-      <aside class="w-12/12 md:w-4/12">
+      <aside class="w-12/12 md:w-4/12 md:border-l-2">
         <Adverts />
       </aside>
     </section>
@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import { mapMutations, mapActions } from "vuex";
 // @ is an alias to /src
 import Header from "@/components/Header.vue";
 import News from "@/components/News.vue";
@@ -28,6 +29,16 @@ export default {
     News,
     Adverts,
     Footer,
+  },
+  data() {
+    return {};
+  },
+  mounted() {
+    this.getHeadline();
+    this.getSources();
+  },
+  methods: {
+    ...mapActions(["getHeadline", "getSources"]),
   },
 };
 </script>

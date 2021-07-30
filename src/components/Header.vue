@@ -91,14 +91,6 @@
           <span>Technology</span>
         </button>
 
-        <button
-          class="py-4 px-4 w-full focus:outline-none flex justify-start bg-white md:pl-0 block md:bg-bluewood md:inline-block md:w-1/2 hover:bg-blumine hover:text-white"
-        >
-          <span class="">
-            Sources <i class="fas fa-angle-down items-center"></i>
-          </span>
-        </button>
-
         <PageSearch class="bg-white py-2 block md:hidden" />
       </div>
     </nav>
