@@ -2,7 +2,8 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
-const apiUrl = "https://newsapi.org/v2";
+const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+const apiUrl = `${proxyUrl}https://newsapi.org/v2`;
 const apiKey = "89ce24b7eaee47239dd1ebdcd2f639aa";
 const pageSize = "5";
 
