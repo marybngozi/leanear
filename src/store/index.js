@@ -58,7 +58,7 @@ export default new Vuex.Store({
         commit("setNews", data.articles);
 
         console.log(data);
-      } catch (error) {
+      } catch (err) {
         console.log(err);
       }
     },
