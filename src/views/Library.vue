@@ -2,11 +2,11 @@
   <div>
     <Header class="sticky top-0" />
     <section class="md:flex md:flex-wrap">
-      <main class="w-12/12 md:w-8/12">
+      <main class="w-12/12 md:w-9/12">
         <News :showLib="true" />
       </main>
 
-      <aside class="w-12/12 mt-16 md:w-4/12 md:border-l-2 md:mt-0">
+      <aside class="w-12/12 mt-16 md:w-3/12 md:border-l-2 md:mt-0">
         <Adverts />
       </aside>
     </section>
