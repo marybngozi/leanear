@@ -1,6 +1,6 @@
 module.exports = {
   // options...
   devServer: {
-    proxy: "https://leanear.netlify.app/",
+    proxy: "https://newsapi.org/",
   },
 };
